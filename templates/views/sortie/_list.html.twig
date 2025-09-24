@@ -1,0 +1,10 @@
+{% for sortie in sorties %}
+    <div class="sortie_listener">
+        {% include 'views/sortie/_sortie.html.twig' with { sortie: sortie } %}
+    </div>
+{% else %}
+    {% include 'views/empty/empty.html.twig' %}
+{% endfor %}
+
+
+
